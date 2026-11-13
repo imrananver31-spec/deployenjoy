@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>Deploy&amp;Enjoy — вайбкодинг с нуля</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- интро -->
+  <div id="splash" aria-hidden="true">
+    <div class="splash-logo">
+      <span class="sl-d">D</span><span class="sl-amp">&amp;</span><span class="sl-e">E</span>
+    </div>
+    <div class="splash-sub">DEPLOY &amp; ENJOY</div>
+  </div>
+
+  <div class="glow" aria-hidden="true"></div>
+
+  <main id="app"></main>
+
+  <nav id="tabbar">
+    <button data-tab="course" class="active"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg><span>Курс</span></button>
+    <button data-tab="prompts"><svg viewBox="0 0 24 24"><path d="M5 7l5 5-5 5M12 18h7"/></svg><span>Промпты</span></button>
+    <button data-tab="glossary"><svg viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3V4zM5 17a3 3 0 013-3h11"/></svg><span>Словарь</span></button>
+    <button data-tab="profile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>Профиль</span></button>
+    <i class="tab-indicator"></i>
+  </nav>
+
+  <div id="toast"></div>
+  <canvas id="confetti"></canvas>
+
+  <script src="course.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
